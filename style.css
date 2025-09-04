@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #00ff9b;
+    --secondary-color: #00a86b;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background: #1e1e1e;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header li {
+    margin: 0 10px;
+}
+
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+header a.active,
+header a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lead {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.album {
+    padding: 40px 0;
+}
+
+#project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 155, 0.1);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.card-text {
+    color: var(--text-color);
+}
+
+.btn {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}

@@ -7,29 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="main-content" id="main-content">
         <header>
+            <a href="#" class="open-btn" id="open-btn">&#9776;</a>
             <ul>
                 <li><a href="#" class="active">Projects</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </header>
-    </div>
 
-    <div class="container">
-        <h1>Welcome to LeonsLab!</h1>
-        <p class="lead">Sharing the (more or less) interesting things I'm doing and projects I'll never finish.</p>
-    </div>
-
-    <div class="album">
         <div class="container">
-            <h2>Projects</h2>
-            <div id="project-list">
+            <h1>Welcome to LeonsLab!</h1>
+            <p class="lead">Sharing the (more or less) interesting things I'm doing and projects I'll never finish.</p>
+        </div>
+
+        <div class="album">
+            <div class="container">
+                <h2>Projects</h2>
+                <div id="project-list">
+                </div>
             </div>
         </div>
     </div>
 
-    
+    <script src="nav.js"></script>
     <script>
         // This script will dynamically add your projects to the list.
         const projectList = document.getElementById('project-list');
@@ -51,7 +52,6 @@
         // Add your projects here
         addProject('Voltfish', 'Finding and refitting a small sailboat for trans-oceanic voyages.', './voltfish/index.html');
         addProject('Boat2Busan', 'Planning a yearlong planet-crossing sailing journey from Germany to Korea.', './boat2busan/index.html');
-
     </script>
 </body>
 </html>
